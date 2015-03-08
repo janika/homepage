@@ -1,4 +1,9 @@
-{  "impostor_syndrome": {
+{ "automate_with_vagrant": {
+     "title": "Automating Development Environment Setup",
+     "date": "Jan 15, 2015",
+     "summary": "Don't let development environment setup become the feared and dreaded thing in your work process."
+   },
+	"impostor_syndrome": {
     "title": "Who is this idiot?",
     "date": "April 20, 2014", 
     "summary": "It's a basic fact of life that real programmers start coding at their early teens, hack in their spare time and are always up to date with bleeding edge technologies. But these great expectations may lead to great burnouts."

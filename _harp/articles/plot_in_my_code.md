@@ -1,7 +1,7 @@
 # There's a Plot In My Code
 “What is programming? What makes it so interesting for you?” During the last few years I have been more actively taking part in preaching the virtues of writing code. Be it coaching at Rails Girls workshops, organizing Tech Sisters’ events or lecturing to first year IT students, I have had to answer these questions more than once. Just saying it’s a fun and exciting way to express yourself, simply does not suffice when you are trying to persuade people to try out something that from a distance looks cryptical and very complicated. So to sound convincing I first had to find a better answer for myself.
 
-#### Something out of nothing
+### Something out of nothing
 I’ve never dreamt of becoming a programmer and did not start to code in my infancy. The fact that I’m a programmer is the consequence of practical reasoning and not being able to decide on anything else when I finished high school. What I dreamed about was being a writer. Writer of stories, plays, movies. And the thing that most compels me in writing is that you can create worlds and alter realities using only your mind. It’s the same thing with writing code and what’s more – I have realized that writing a web application is not so far off from writing for example a screenplay.
 
 
