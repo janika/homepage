@@ -7,6 +7,6 @@
 
 .img-responsive {
   max-width: 100% !important;
-  min-width: 260px;
+  margin: 25px;
   height: auto;
 }
