@@ -1,0 +1,12 @@
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-responsive {
+  max-width: 100% !important;
+  min-width: 260px;
+  height: auto;
+}
