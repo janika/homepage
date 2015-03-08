@@ -10,10 +10,10 @@ ul
   li The development environment should be similar on all machines
   li Everyone should be able to use his/her favourite tool for writing code and browser to see the results
 h3 Tools To Use
-p There doesn’t seem to be many tools for just automating the development environment setup. If you don’t want to write your own tool, there are basically two good options – Github’s <a href="https://boxen.github.com/">Boxen</a> or HashiCorp’s <a href="https://www.vagrantup.com/">Vagrant</a>.
+p There doesn’t seem to be many tools for just automating the development environment setup. If you don’t want to write your own tool, there are basically two good options – Github’s <a href="https://boxen.github.com/" target="_blank">Boxen</a> or HashiCorp’s <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a>.
 p Boxen uses Puppet scripts and they say it has roughly a bajillion libraries, which can be used for different setups. As lovely as it seems, Boxen has one downside – it only works on Mac OS X. The fact that developers in Teamweek use different operating systems and the ideal of everyone having similar development environment setup means we probably need to use a virtual machine. Which is great, because Vagrant gives us the possibility to run our environment on a local virtualised platform using VirtualBox or VMware, making it portable between Windows, Mac OS X, and Linux. For automatically installing and configuring software on the machine, it’s possible to use shell scripts, Chef or Puppet.
 h3 Our Setup
-p To get things started, you need to install Vagrant and your flavour of virtualisation platform – for us, it’s <a href="https://www.virtualbox.org/">VirtualBox</a>. After that, just create a project folder for the setup files and run vagrant init. This will create the default Vagrantfile where you define in clean Ruby syntax, what base box you want to use (we use ubuntu/trusty64 cause our production servers use it, but there are more available at <a href="https://atlas.hashicorp.com/boxes/search">Atlas</a>), which folders will be synced with the host machine and what ports forwarded.
+p To get things started, you need to install Vagrant and your flavour of virtualisation platform – for us, it’s <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a>. After that, just create a project folder for the setup files and run vagrant init. This will create the default Vagrantfile where you define in clean Ruby syntax, what base box you want to use (we use ubuntu/trusty64 cause our production servers use it, but there are more available at <a href="https://atlas.hashicorp.com/boxes/search" target="_blank">Atlas</a>), which folders will be synced with the host machine and what ports forwarded.
 p This is how a simple Vagrantfile could look like:
 
 div.
@@ -42,7 +42,7 @@ p To get it all working means a lot of trial and error for one developer, but in
 
 h3 Some Pitfalls
 p Using Vagrant is no picnic either. There were several weird problems we encountered trying to set it up. For one thing ssh to a virtual machine can give you a SSH Timeout, if you don’t have Intel Virtualisation enabled in host machine’s BIOS. Not sure if it’s the correct thing to do, but this is what did the trick for us.
-p VirtualBox’s default shared folder implementation had high performance penalties for us, so to speed things up, we <a href="https://docs.vagrantup.com/v2/synced-folders/nfs.html">switched to NFS</a>, which means you need to install NFS support to your host machine, if you are not using OS X.
+p VirtualBox’s default shared folder implementation had high performance penalties for us, so to speed things up, we <a href="https://docs.vagrantup.com/v2/synced-folders/nfs.html" target="_blank">switched to NFS</a>, which means you need to install NFS support to your host machine, if you are not using OS X.
 p With NFS there were some weird problems syncing to an encrypted home folder under Ubuntu, but this can be fixed by moving the host machine’s sync folder outside the /home folder.
 p The virtual machine can be speed up by changing the memory and cpu settings in vagrant configuration. Using 1/4 of your system memory and using the number of CPU cores the host machine has, seems to be a reliable setting for us.
 p Nevertheless for some machines vagrant keeps eating up host’s memory and we are still trying to figure out what the problem may be.
@@ -64,7 +64,7 @@ p All in all, we are quite content with our choice of environment setup automati
 p
   em 
     | This is a revised version of my writing, which was originally published in 
-    a(href="http://blog.teamweek.com") Teamweek blog 
+    a(href="http://blog.teamweek.com" target="_blank") Teamweek blog 
     | under the name 
-    a(href="http://blog.teamweek.com/2015/01/automating-development-environment-setup/") Automating Development Environment Setup 
+    a(href="http://blog.teamweek.com/2015/01/automating-development-environment-setup/" target="_blank") Automating Development Environment Setup 
     | in January 2015.
