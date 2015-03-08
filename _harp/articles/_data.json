@@ -1,7 +1,7 @@
 { "automate_with_vagrant": {
      "title": "Automating Development Environment Setup",
      "date": "Jan 15, 2015",
-     "summary": "Don't let development environment setup become the feared and dreaded thing in your work process."
+     "summary": "Don't let development environment setup become your enemy! Automating the process with Vagrant can make your life a lot easier."
    },
 	"impostor_syndrome": {
     "title": "Who is this idiot?",
