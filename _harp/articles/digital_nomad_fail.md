@@ -1,1 +1,0 @@
-# So I'm Failing At This Digital Nomad Thing

@@ -12,7 +12,6 @@ html(lang="en")
     link(rel="stylesheet" href="/style/common.css")
     link(rel="stylesheet" href="/style/custom.css")
   body
-    != partial("/_shared/nav")
     .content
       .container
         if(current.path[0] == "articles" && current.source !== 'index')
